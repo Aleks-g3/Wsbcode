@@ -12,14 +12,15 @@
         <div id="panel">
         <form id="form1" runat="server">
     <label for="username">Nazwa użytkownika:</label>
-    <input type="text" id="username" name="username"/>
+    <input type="text" id="username" name="username" itemid="username"/>
     <label for="password">Hasło:</label>
-            <input type="password" id="password" name="password"/>
+            <input type="password" id="password" name="password" itemid="password"/>
     <p><a href="#">Zapomniałeś hasła?</a></p>
     
     <div id="lower">
     <input type="checkbox"/><label class="check" for="checkbox">Zapamiętaj mnie!</label>
-    <input type="submit" value="Login"/>
+    <asp:Button runat="server" Text="Login" onclick="LoginClick" id="submit"/>
+
     </div>
     </form>
     </div>

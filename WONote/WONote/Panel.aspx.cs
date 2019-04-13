@@ -9,7 +9,13 @@ namespace WONote
 {
     public partial class Panel : System.Web.UI.Page
     {
+        private string login = "";
         protected void Page_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void LoginClick(object sender, EventArgs e)
         {
 
         }
