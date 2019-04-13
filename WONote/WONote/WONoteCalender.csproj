@@ -98,8 +98,8 @@
     <Content Include="css\pulpit.css" />
     <Content Include="Forum.html" />
     <Content Include="Global.asax" />
-    <Content Include="Panel.html" />
-    <Content Include="pulpit.html" />
+    <Content Include="Panel.aspx" />
+    <Content Include="pulpit.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -108,11 +108,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Panel.aspx.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel.aspx.designer.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="pulpit.aspx.cs">
+      <DependentUpon>pulpit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pulpit.aspx.designer.cs">
+      <DependentUpon>pulpit.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
