@@ -42,7 +42,7 @@
         <div class="Hobbies">
          <h2>Logowanie/Rejestracja</h2>
           <div class="skill-row">
-            <a href="Panel.html"><img class="Hobbies-photo" src="images\hobbies.jpg" alt="Panel"/></a>
+            <a href="Panel.aspx"><img class="Hobbies-photo" src="images\hobbies.jpg" alt="Panel"/></a>
           </div>
           <hr/>
         <div class="contact-me">
