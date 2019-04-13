@@ -12,9 +12,10 @@
         <div id="panel">
         <form id="form1" runat="server">
     <label for="username">Nazwa użytkownika:</label>
-    <input type="text" id="username" name="username" itemid="username"/>
+            <asp:TextBox ID="username" runat="server" />
+    
     <label for="password">Hasło:</label>
-            <input type="password" id="password" name="password" itemid="password"/>
+            <asp:TextBox ID="password" runat="server" />
     <p><a href="#">Zapomniałeś hasła?</a></p>
     
     <div id="lower">
