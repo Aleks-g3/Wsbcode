@@ -8,7 +8,7 @@ namespace DB
     public partial class NoteEnity : DbContext
     {
         public NoteEnity()
-            : base("name=NoteEnity")
+            : base("data source=DESKTOP-MDCEEA1\\SQLEXPRESS;initial catalog=Note;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework providerName = System.Data.SqlClient")
         {
         }
 
