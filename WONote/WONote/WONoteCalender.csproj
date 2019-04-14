@@ -100,11 +100,11 @@
     <Content Include="Global.asax" />
     <Content Include="Panel.aspx" />
     <Content Include="pulpit.aspx" />
+    <Content Include="rej.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -127,6 +127,13 @@
     </Compile>
     <Compile Include="pulpit.aspx.designer.cs">
       <DependentUpon>pulpit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rej.aspx.cs">
+      <DependentUpon>rej.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rej.aspx.designer.cs">
+      <DependentUpon>rej.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

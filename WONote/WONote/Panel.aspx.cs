@@ -5,22 +5,26 @@ using System.Net.Http;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DB;
 
 namespace WONote
 {
     public partial class Panel : System.Web.UI.Page
     {
-        HttpClient client = new HttpClient();
+        NoteEnity client = new NoteEnity();
         private string login = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             
         }
 
-        protected async void LoginClick(object sender, EventArgs e)
+        protected void LoginClick(object sender, EventArgs e)
         {
-            var response = client.GetAsync("http://localhost:53409/api/users/" + username.Text);
             
+            if (client.Users.Any(u => u.uLogin == username.Text))
+            {
+                login = username.Text;
+            }
         }
     }
 }

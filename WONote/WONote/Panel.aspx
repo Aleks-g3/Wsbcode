@@ -17,7 +17,7 @@
     <label for="password">Hasło:</label>
             <asp:TextBox ID="password" runat="server" />
     <p><a href="#">Zapomniałeś hasła?</a></p>
-    
+    <p><a href="rejestruj.aspx">zarejestruj się</a></p>
     <div id="lower">
     <input type="checkbox"/><label class="check" for="checkbox">Zapamiętaj mnie!</label>
     <asp:Button runat="server" Text="Login" onclick="LoginClick" id="submit"/>
