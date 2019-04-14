@@ -11,9 +11,10 @@
         <div>
         </div>
         <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
-        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px">
-        </asp:DetailsView>
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+        <asp:GridView ID="GridView1" runat="server">
+        </asp:GridView>
     </form>
 </body>
 </html>

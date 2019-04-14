@@ -12,18 +12,23 @@ namespace WONote
     public partial class Panel : System.Web.UI.Page
     {
         NoteEnity client = new NoteEnity();
-        private string login = "";
+        public string login = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             
         }
 
+        
+
         protected void LoginClick(object sender, EventArgs e)
         {
-            
+            if (!IsPostBack)
+            { 
             if (client.Users.Any(u => u.uLogin == username.Text))
             {
                 login = username.Text;
+                submit.Attributes.Add("href", "Calendar.aspx");
+            }
             }
         }
     }
