@@ -12,9 +12,22 @@
         </div>
         <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
-        <asp:GridView ID="GridView1" runat="server">
-        </asp:GridView>
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="dodaj" />
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false">
+            <Columns>
+                <asp:TemplateField>
+                    <HeaderTemplate>Data</HeaderTemplate>
+                    
+                    
+                </asp:TemplateField>
+                <asp:TemplateField>
+                    <HeaderTemplate>ilosc powtorzen</HeaderTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField>
+                    <HeaderTemplate>Cwiczenie</HeaderTemplate>
+                </asp:TemplateField>
+            </Columns>
+            </asp:GridView>
     </form>
 </body>
 </html>
